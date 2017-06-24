@@ -11,10 +11,10 @@
 #   error Must push before suppressing errors.
 #endif
 
-#if defined(WARNINGS_AUTOMATIC_INLINE)
+#if defined(WARNINGS_NARROWING_CONVERSIONS)
 #   error automatic-inline already suppressed.
 #else
-#   define WARNINGS_AUTOMATIC_INLINE
+#   define WARNINGS_NARROWING_CONVERSIONS
 #endif
 
 #if defined(WARNINGS_HAVE_CLANG)

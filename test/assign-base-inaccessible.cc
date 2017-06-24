@@ -4,7 +4,7 @@
 
 #include <warnings/push.h>
 #include <warnings/assign-base-inaccessible.h>
-#include <warnings/c++98-compat.h>
+#include <warnings/c++11-extensions.h>
 
 class Foo
 {
