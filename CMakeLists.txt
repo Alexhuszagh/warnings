@@ -25,24 +25,37 @@ if(BUILD_STATIC)
     endif()
 endif()
 
+# LIBRARY
+# -------
+
+set(WARNINGS_INCLUDE_DIR src)
+set(WARNINGS_INCLUDE_DIRS ${WARNINGS_INCLUDE_DIR})
+
 # TESTS
 # -----
 
 set(TEST_FILES
     test/main.cc
+    test/assign-base-inaccessible.cc
 )
 
 if(BUILD_TESTS)
     if(NOT TARGET gtest)
         add_subdirectory(googletest)
     endif()
-    include_directories(googletest/googletest/include)
+    include_directories(googletest/googletest/include ${WARNINGS_INCLUDE_DIRS})
 
     add_executable(warnings_tests ${TEST_FILES})
     target_link_libraries(warnings_tests
         gtest
         gtest_main
     )
+        # Need to specify proper exception handling for Windows.
+    if(MSVC)
+        set_target_properties(warnings_tests PROPERTIES
+            COMPILE_OPTIONS "/EHsc"
+        )
+    endif()
 
     add_test(NAME warnings_tests
         COMMAND warnings_tests
