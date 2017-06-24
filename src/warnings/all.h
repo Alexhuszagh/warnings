@@ -76,9 +76,7 @@
 #include <warnings/parentheses.h>
 #include <warnings/pedantic.h>
 #include <warnings/pointer-sign.h>
-#include <warnings/pop.h>
 #include <warnings/protocol.h>
-#include <warnings/push.h>
 #include <warnings/receiver-is-weak.h>
 #include <warnings/return-type.h>
 #include <warnings/selector.h>
@@ -91,7 +89,6 @@
 #include <warnings/special-members.h>
 #include <warnings/static-ctor-not-thread-safe.h>
 #include <warnings/strict-selector-match.h>
-#include <warnings/sugar.cmake.h>
 #include <warnings/switch.h>
 #include <warnings/switch-enum.h>
 #include <warnings/this-used-in-init.h>

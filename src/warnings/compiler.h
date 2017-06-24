@@ -30,3 +30,14 @@
 #   define WARNINGS_HAVE_GCC 1
 #   define WARNINGS_COMPILER_DETECTED
 #endif
+
+// CODE
+// ----
+
+#if defined(__cplusplus__) || defined(__cplusplus)
+#   define WARNINGS_HAVE_CPP
+#endif
+
+#if defined(__OBJC__)
+#   define WARNINGS_HAVE_OBJC
+#endif

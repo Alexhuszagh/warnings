@@ -37,20 +37,13 @@ set(WARNINGS_INCLUDE_DIRS ${WARNINGS_INCLUDE_DIR})
 
 set(TEST_FILES
     test/main.cc
+    test/all.cc
     test/assign-base-inaccessible.cc
 )
 
 if(BUILD_TESTS)
-    if(NOT TARGET gtest)
-        add_subdirectory(googletest)
-    endif()
-    include_directories(googletest/googletest/include ${WARNINGS_INCLUDE_DIRS})
-
+    include_directories(${WARNINGS_INCLUDE_DIRS})
     add_executable(warnings_tests ${TEST_FILES})
-    target_link_libraries(warnings_tests
-        gtest
-        gtest_main
-    )
         # Need to specify proper exception handling for Windows.
     if(MSVC)
         set_target_properties(warnings_tests PROPERTIES
