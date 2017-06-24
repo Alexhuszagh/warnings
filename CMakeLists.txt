@@ -9,6 +9,7 @@ enable_testing()
 # FLAGS
 # -----
 
+option(BUILD_STATIC "Build tests using static linkage" ON)
 option(BUILD_TESTS "Build warnings library tests" ON)
 
 if(BUILD_STATIC)
