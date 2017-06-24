@@ -21,16 +21,16 @@ Warnings is a header-only, cross-compiler warning suppression library. Warnings 
 
 ```cpp
 // push warning suppression
-#include <leathers/push>
+#include <leathers/push.h>
 
 // include suppressed warnings
-#include <leathers/all>                     // suppress all warnings
-#include <leathers/exit-time-destructors>   // suppress exit-time-destructors
+#include <leathers/all.h>                     // suppress all warnings
+#include <leathers/exit-time-destructors.h>   // suppress exit-time-destructors
 
 // insert your code here
 
 // pop all warning suppression
-#include <leathers/pop>
+#include <leathers/pop.h>
 ```
 
 ## Installation
