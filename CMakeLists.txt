@@ -39,6 +39,8 @@ set(TEST_FILES
     test/main.cc
     test/all.cc
     test/assign-base-inaccessible.cc
+    test/assign-could-not-be-generated.cc
+    test/automatic-inline.cc
 )
 
 if(BUILD_TESTS)
