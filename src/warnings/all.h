@@ -30,6 +30,9 @@
 #include <warnings/deprecated.h>
 #include <warnings/deprecated-declarations.h>
 //#include <leathers/deprecated-implementations>
+//#include <leathers/deprecated-objc-isa-usage>
+//#include <leathers/deprecated-register>
+#include <warnings/narrowing-conversions.h>
 
 //#include <leathers/dflt-ctor-base-inaccessible>
 //#include <leathers/dflt-ctor-could-not-be-generated>
@@ -38,8 +41,6 @@
 //#include <leathers/not-inlined>
 //#include <leathers/unreferenced-inline>
 //#include <leathers/covered-switch-default>
-//#include <leathers/deprecated-objc-isa-usage>
-//#include <leathers/deprecated-register>
 //#include <leathers/digraphs-not-supported>
 //#include <leathers/disabled-macro-expansion>
 //#include <leathers/documentation>
