@@ -28,10 +28,6 @@
 #endif
 
 #if defined(WARNINGS_HAVE_MSVC)
-// Some of these warnings aren't consistently recognized.
-// Both 2397 and 2398 aren't documented.
-#   include <warnings/no-such-warning.h>
-#   pragma warning(disable: 2397)
-#   pragma warning(disable: 2398)
+#   pragma warning(disable: 4244)
 #   pragma warning(disable: 4838)
 #endif
