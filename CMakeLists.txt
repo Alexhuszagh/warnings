@@ -9,6 +9,9 @@ enable_testing()
 # FLAGS
 # -----
 
+set(CMAKE_CXX_STANDARD 11)
+set(CXX_STANDARD TRUE)
+
 option(BUILD_STATIC "Build tests using static linkage" ON)
 option(BUILD_TESTS "Build warnings library tests" ON)
 
