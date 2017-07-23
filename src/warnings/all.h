@@ -8,9 +8,6 @@
 
 #include <warnings/arc-bridge-casts-disallowed-in-nonarc.h>
 #include <warnings/arc-repeated-use-of-weak.h>
-#include <warnings/assign-base-inaccessible.h>
-#include <warnings/assign-could-not-be-generated.h>
-#include <warnings/automatic-inline.h>
 #include <warnings/behavior-change.h>
 #include <warnings/bool-conversion.h>
 #include <warnings/c++11-extensions.h>
@@ -24,14 +21,11 @@
 #include <warnings/conversion.h>
 #include <warnings/conversion-loss.h>
 #include <warnings/conversion-sign-extended.h>
-#include <warnings/copy-ctor-could-not-be-generated.h>
 #include <warnings/deprecated.h>
 #include <warnings/deprecated-declarations.h>
 #include <warnings/deprecated-implementations.h>
 #include <warnings/deprecated-objc-isa-usage.h>
 #include <warnings/deprecated-register.h>
-#include <warnings/dflt-ctor-base-inaccessible.h>
-#include <warnings/dflt-ctor-could-not-be-generated.h>
 #include <warnings/disabled-macro-expansion.h>
 #include <warnings/documentation.h>
 #include <warnings/documentation-unknown-command.h>
@@ -41,7 +35,6 @@
 #include <warnings/exit-time-destructors.h>
 #include <warnings/explicit-ownership-type.h>
 #include <warnings/extra-semi.h>
-#include <warnings/force-not-inlined.h>
 #include <warnings/format.h>
 #include <warnings/four-char-constants.h>
 #include <warnings/global-constructors.h>
@@ -64,7 +57,6 @@
 #include <warnings/newline-eof.h>
 #include <warnings/no-such-warning.h>
 #include <warnings/non-virtual-dtor.h>
-#include <warnings/not-inlined.h>
 #include <warnings/objc-missing-property-synthesis.h>
 #include <warnings/objc-root-class.h>
 #include <warnings/object-layout-change.h>
@@ -96,7 +88,6 @@
 #include <warnings/unknown-pragmas.h>
 #include <warnings/unreachable-code.h>
 #include <warnings/unreachable-code-return.h>
-#include <warnings/unreferenced-inline.h>
 #include <warnings/unsafe-conversion.h>
 #include <warnings/unused-but-set-variable.h>
 #include <warnings/unused-function.h>
@@ -105,5 +96,4 @@
 #include <warnings/unused-value.h>
 #include <warnings/unused-variable.h>
 #include <warnings/used-but-marked-unused.h>
-#include <warnings/user-ctor-required.h>
 #include <warnings/weak-vtables.h>
