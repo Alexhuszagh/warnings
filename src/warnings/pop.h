@@ -6,13 +6,11 @@
  *  \brief Pop error suppression.
  */
 
-#pragma once
-
 // MACROS
 // ------
 
 #if !defined(WARNINGS_PUSH)
-#   error Must have pushed before popping error suppression.
+#   error Must push before popping error suppression.
 #endif
 
 #if defined(WARNINGS_HAVE_CLANG)
@@ -89,6 +87,7 @@
 #undef WARNINGS_NARROWING_CONVERSIONS
 #undef WARNINGS_NEWLINE_EOF
 #undef WARNINGS_NON_VIRTUAL_DTOR
+#undef WARNINGS_NOT_ENOUGH_PARAMETERS_FOR_MACRO
 #undef WARNINGS_NOT_INLINED
 #undef WARNINGS_NO_SUCH_WARNING
 #undef WARNINGS_OBJC_MISSING_PROPERTY_SYNTHESIS

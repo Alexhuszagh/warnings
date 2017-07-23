@@ -5,8 +5,6 @@
  *  \brief Suppress narrowing conversions.
  */
 
-#pragma once
-
 #if !defined(WARNINGS_PUSH)
 #   error Must push before suppressing errors.
 #endif

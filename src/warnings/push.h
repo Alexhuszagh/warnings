@@ -6,15 +6,13 @@
  *  \brief Push error suppression.
  */
 
-#pragma once
-
 #include <warnings/compiler.h>
 
 // MACROS
 // ------
 
 #if defined(WARNINGS_PUSH)
-#   error Must be pop before repushing errors.
+#   error Must pop before repushing errors.
 #else
 #   define WARNINGS_PUSH
 #endif

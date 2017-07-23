@@ -6,8 +6,6 @@
  *  \brief Suppress all warnings.
  */
 
-#pragma once
-
 #include <warnings/arc-bridge-casts-disallowed-in-nonarc.h>
 #include <warnings/arc-repeated-use-of-weak.h>
 #include <warnings/assign-base-inaccessible.h>
