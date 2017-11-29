@@ -84,6 +84,7 @@
 #include <warnings/this-used-in-init.h>
 #include <warnings/undeclared-selector.h>
 #include <warnings/undef.h>
+#include <warnings/unevaluated-expression.h>
 #include <warnings/uninitialized.h>
 #include <warnings/unknown-pragmas.h>
 #include <warnings/unreachable-code.h>
