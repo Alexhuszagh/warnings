@@ -82,6 +82,7 @@
 #include <warnings/switch.h>
 #include <warnings/switch-enum.h>
 #include <warnings/this-used-in-init.h>
+#include <warnings/unary-minus-unsigned.h>
 #include <warnings/undeclared-selector.h>
 #include <warnings/undef.h>
 #include <warnings/unevaluated-expression.h>
